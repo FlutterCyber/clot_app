@@ -26,6 +26,7 @@ class CustomClipRRect extends StatelessWidget {
             builder: (context) => const ProductPage(),
           ),
         );
+
       },
       child: Padding(
         padding: const EdgeInsets.only(right: 15),

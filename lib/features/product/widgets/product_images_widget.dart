@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class ProductImagesWidget extends StatelessWidget {
   const ProductImagesWidget({super.key});
 

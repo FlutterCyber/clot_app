@@ -13,7 +13,8 @@ class ProductSelectionWidget extends StatefulWidget {
     super.key,
     required this.label,
     required this.initialValue,
-    required this.options, required Null Function(dynamic value) onSelected,
+    required this.options,
+    required Null Function(dynamic value) onSelected,
   });
 
   @override
@@ -63,9 +64,7 @@ class _ProductSelectionWidgetState extends State<ProductSelectionWidget> {
             Row(
               children: [
                 Text(
-                  widget.label == "Color"
-                      ? ""
-                      : selectedValue,
+                  widget.label == "Color" ? "" : selectedValue,
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 16,
@@ -78,7 +77,8 @@ class _ProductSelectionWidgetState extends State<ProductSelectionWidget> {
                     radius: 10,
                   ),
                 const SizedBox(width: 20),
-                const Icon(IconsaxPlusBroken.arrow_down_2, color: Colors.white),
+                const Icon(IconsaxPlusBroken.arrow_down_2,
+                    color: CustomColor.whiteColor),
               ],
             ),
           ],
