@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
+import 'package:iconsax_plus/iconsax_plus.dart';
 
 import '../../../core/constants/color.dart';
 import 'bottom_sheet_widget.dart';
@@ -78,7 +78,7 @@ class _ProductSelectionWidgetState extends State<ProductSelectionWidget> {
                     radius: 10,
                   ),
                 const SizedBox(width: 20),
-                const Icon(IconlyBroken.arrow_down_2, color: Colors.white),
+                const Icon(IconsaxPlusBroken.arrow_down_2, color: Colors.white),
               ],
             ),
           ],

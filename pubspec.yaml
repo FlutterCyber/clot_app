@@ -36,8 +36,6 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   iconsax_plus: ^1.0.0
-  iconly: ^1.0.1
-  iconsax: ^0.0.8
 
 
 dev_dependencies:
