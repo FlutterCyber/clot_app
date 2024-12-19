@@ -1,3 +1,4 @@
+import 'package:clot_app/core/route/rout_names.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
 
@@ -19,14 +20,10 @@ class CustomClipRRect extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        // ProductPage sahifasiga o'tish
-        Navigator.push(
+        Navigator.pushNamed(
           context,
-          MaterialPageRoute(
-            builder: (context) => const ProductPage(),
-          ),
+          RouteNames.productPage,
         );
-
       },
       child: Padding(
         padding: const EdgeInsets.only(right: 15),

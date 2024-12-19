@@ -22,6 +22,7 @@ import 'package:clot_app/features/profile/wishlist.dart';
 import 'package:clot_app/features/search_page/main_search_page.dart';
 import 'package:flutter/material.dart';
 import '../../features/auth/sign_in/sing_in_password.dart';
+import '../../features/product/product_page.dart';
 import '../../features/search_page/if_found.dart';
 import '../../features/search_page/if_not_found.dart';
 import '../../features/search_page/search_page_controller.dart';
@@ -87,6 +88,8 @@ class AppRoute {
         return MaterialPageRoute(builder: (_) => const CheckoutPage());
       case RouteNames.messagePage:
         return MaterialPageRoute(builder: (_) => const MessagePage());
+      case RouteNames.productPage:
+        return MaterialPageRoute(builder: (_) => const ProductPage());
       default:
         return _errorRoute();
     }
