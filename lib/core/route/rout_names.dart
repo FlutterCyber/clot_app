@@ -27,5 +27,6 @@ class RouteNames {
   static const String cartPage = '/cartPage';
   static const String checkoutPage = '/checkoutPage';
   static const String messagePage = '/messagePage';
+  static const String productPage = '/productPage';
 // static const String profilePage = '/profilePage';
 }

@@ -29,7 +29,8 @@ class ProductPage extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            icon: const Icon(IconsaxPlusBroken.heart, color: CustomColor.whiteColor),
+            icon: const Icon(IconsaxPlusBroken.heart,
+                color: CustomColor.whiteColor),
             onPressed: () {},
           ),
         ],
@@ -45,10 +46,10 @@ class ProductPage extends StatelessWidget {
             SizedBox(height: 16),
             ProductReviewsWidget(),
             SizedBox(height: 16),
-            ProductActionsWidget(price: 99),
           ],
         ),
       ),
+      bottomNavigationBar: const ProductActionsWidget(price: 99),
     );
   }
 }

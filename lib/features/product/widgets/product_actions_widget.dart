@@ -15,9 +15,7 @@ class ProductActionsWidget extends StatelessWidget {
         color: const Color(0xFF8E6CEF),
       ),
       child: TextButton(
-        onPressed: () {
-
-        },
+        onPressed: () {},
         style: TextButton.styleFrom(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(30),
@@ -39,7 +37,6 @@ class ProductActionsWidget extends StatelessWidget {
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 18,
-
               ),
             ),
           ],

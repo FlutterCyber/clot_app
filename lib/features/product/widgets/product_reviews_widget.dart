@@ -8,10 +8,8 @@ class ProductReviewsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-
         const Text(
           "Reviews",
           style: TextStyle(
@@ -42,12 +40,11 @@ class ProductReviewsWidget extends StatelessWidget {
         ),
         const SizedBox(height: 16),
 
-
         _buildReview(
           avatar: "assets/images/avatar.png",
           name: "Alex Morgan",
           review:
-          "Gucci transcribes its heritage, creativity, and innovation into a plenitude of collections. From staple items to distinctive accessories.",
+              "Gucci transcribes its heritage, creativity, and innovation into a plenitude of collections. From staple items to distinctive accessories.",
           date: "12 days ago",
           rating: 4,
         ),
@@ -56,7 +53,7 @@ class ProductReviewsWidget extends StatelessWidget {
           avatar: "assets/images/avatar.png",
           name: "Alex Morgan",
           review:
-          "Gucci transcribes its heritage, creativity, and innovation into a plenitude of collections. From staple items to distinctive accessories.",
+              "Gucci transcribes its heritage, creativity, and innovation into a plenitude of collections. From staple items to distinctive accessories.",
           date: "12 days ago",
           rating: 4,
         ),
@@ -93,7 +90,7 @@ class ProductReviewsWidget extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: List.generate(
               5,
-                  (index) => Icon(
+              (index) => Icon(
                 index < rating ? Icons.star : Icons.star_border,
                 color: CustomColor.buttonColor,
                 size: 18,

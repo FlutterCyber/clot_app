@@ -85,8 +85,6 @@ class _ProductDetailsWidgetState extends State<ProductDetailsWidget> {
           ),
         ),
         const SizedBox(height: 24),
-
-
         const Text(
           "Shipping & Returns",
           style: TextStyle(
