@@ -1,4 +1,5 @@
 import 'package:clot_app/core/constants/color.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 class SendEmail extends StatelessWidget {
   const SendEmail({super.key});
@@ -21,9 +22,9 @@ class SendEmail extends StatelessWidget {
                 const SizedBox(
                   height: 30,
                 ),
-                const Text(
-                  "We Sent you an Email to reset \nyour password.",
-                  style: TextStyle(color: Colors.white, fontSize: 30),
+                 Text(
+                  "We Sent you an Email to reset \nyour password.".tr(),
+                  style: const TextStyle(color: Colors.white, fontSize: 30),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(
@@ -42,10 +43,10 @@ class SendEmail extends StatelessWidget {
                         "/sign_in_email",
                       );
                     },
-                    child: const Center(
+                    child:  Center(
                       child: Text(
-                        "Return to Login ",
-                        style: TextStyle(color: Colors.white),
+                        "Return to Login ".tr(),
+                        style: const TextStyle(color: Colors.white),
                       ),
                     ),
                   ),

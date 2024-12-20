@@ -17,6 +17,7 @@ import 'package:clot_app/features/order/orders.dart';
 import 'package:clot_app/features/profile/add_address.dart';
 import 'package:clot_app/features/profile/add_card_page.dart';
 import 'package:clot_app/features/profile/address_edit.dart';
+import 'package:clot_app/features/profile/language_page.dart';
 import 'package:clot_app/features/profile/payment_page.dart';
 import 'package:clot_app/features/profile/wishlist.dart';
 import 'package:clot_app/features/search_page/main_search_page.dart';
@@ -61,6 +62,8 @@ class AppRoute {
         return MaterialPageRoute(builder: (_) => const AddressEdit());
       case RouteNames.addAddress:
         return MaterialPageRoute(builder: (_) => const AddAddress());
+      case RouteNames.languagePage:
+        return MaterialPageRoute(builder: (_) => const LanguagePage());
       case RouteNames.paymentPage:
         return MaterialPageRoute(builder: (_) => const PaymentPage());
       case RouteNames.addCard:

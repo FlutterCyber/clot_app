@@ -1,6 +1,7 @@
 import 'package:clot_app/core/constants/color.dart';
 import 'package:clot_app/features/auth/widgets/custom_button.dart';
 import 'package:clot_app/features/auth/widgets/log_in_forms.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import '../../../core/route/rout_names.dart';
 
@@ -17,9 +18,9 @@ class SignInPassword extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              "Sign in",
-              style: TextStyle(
+             Text(
+              "Sign in".tr(),
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 32,
               ),
@@ -27,7 +28,7 @@ class SignInPassword extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            LogInForms(text: "Password", hideText: true,),
+            LogInForms(text: "Password".tr(), hideText: true,),
             const SizedBox(
               height: 20,
             ),
@@ -35,15 +36,15 @@ class SignInPassword extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushNamed(context, RouteNames.bottomNavBar);
                 },
-                text: "Continue"),
+                text: "Continue".tr()),
             const SizedBox(
               height: 20,
             ),
             Row(
               children: [
-                const Text(
-                  "Forgot Password ?",
-                  style: TextStyle(color: Colors.white, fontSize: 15),
+                 Text(
+                  "Forgot Password ?".tr(),
+                  style: const TextStyle(color: Colors.white, fontSize: 15),
                 ),
                 TextButton(
                   onPressed: () {
@@ -57,8 +58,8 @@ class SignInPassword extends StatelessWidget {
                           FontWeight.bold, // Example for bold text (optional)
                     ),
                   ),
-                  child: const Text(
-                    "Reset",
+                  child:  Text(
+                    "Reset".tr(),
                   ),
                 )
               ],

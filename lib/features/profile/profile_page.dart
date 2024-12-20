@@ -1,5 +1,7 @@
+import 'package:clot_app/app.dart';
 import 'package:clot_app/core/constants/color.dart';
 import 'package:clot_app/core/route/rout_names.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax_plus/iconsax_plus.dart';
 
@@ -34,9 +36,9 @@ class ProfilePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text(
-                      "Gilbert Jones",
-                      style: TextStyle(
+                     Text(
+                      "Gilbert Jones".tr(),
+                      style: const TextStyle(
                         color: Colors.white,
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -45,18 +47,18 @@ class ProfilePage extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const Text(
-                          "Glbertjones001@gmail.com",
-                          style: TextStyle(
+                         Text(
+                          "Glbertjones001@gmail.com".tr(),
+                          style: const TextStyle(
                             color: Colors.grey,
                             fontSize: 16,
                           ),
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: const Text(
-                            "Edit",
-                            style: TextStyle(
+                          child:  Text(
+                            "Edit".tr(),
+                            style: const TextStyle(
                               color: CustomColor.buttonColor,
                               fontSize: 16,
                             ),
@@ -64,9 +66,9 @@ class ProfilePage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const Text(
-                      "121-224-7890",
-                      style: TextStyle(
+                     Text(
+                      "121-224-7890".tr(),
+                      style: const TextStyle(
                         color: Colors.grey,
                         fontSize: 16,
                       ),
@@ -76,6 +78,9 @@ class ProfilePage extends StatelessWidget {
               ),
               Column(
                 children: [
+                  elevatedButton("language", () {
+                    Navigator.pushNamed(context, RouteNames.languagePage);
+                  }),
                   elevatedButton("Address", () {
                     Navigator.pushNamed(context, RouteNames.addressEdit);
                   }),
@@ -86,7 +91,6 @@ class ProfilePage extends StatelessWidget {
                     Navigator.pushNamed(context, RouteNames.paymentPage);
                   }),
                   elevatedButton("Help", () {}),
-                  elevatedButton("Support", () {}),
                 ],
               ),
               TextButton(
@@ -127,7 +131,7 @@ Widget elevatedButton(String text, VoidCallback onPressed) {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            text,
+            text.tr(),
             style: const TextStyle(
                 color: Colors.white, fontSize: 16, fontWeight: FontWeight.w600),
           ),

@@ -2,6 +2,7 @@ import 'package:clot_app/core/constants/color.dart';
 import 'package:clot_app/core/route/rout_names.dart';
 import 'package:clot_app/features/auth/widgets/continue_widget.dart';
 import 'package:clot_app/features/auth/widgets/custom_button.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import '../widgets/log_in_forms.dart';
 
@@ -18,9 +19,9 @@ class SignInEmail extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              "Sign in",
-              style: TextStyle(
+             Text(
+              "Sign in".tr(),
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 32,
               ),
@@ -29,7 +30,7 @@ class SignInEmail extends StatelessWidget {
               height: 20,
             ),
             //! Forms
-            LogInForms(text: "Email Address", hideText: false,),
+            LogInForms(text: "Email Address".tr(), hideText: false,),
             const SizedBox(
               height: 20,
             ),
@@ -38,15 +39,15 @@ class SignInEmail extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushNamed(context, RouteNames.signInPassword);
                 },
-                text: "Continue"),
+                text: "Continue".tr()),
             const SizedBox(
               height: 20,
             ),
             Row(
               children: [
-                const Text(
-                  "Don't have an Account ?",
-                  style: TextStyle(color: Colors.white, fontSize: 15),
+                 Text(
+                  "Don't have an Account ?".tr(),
+                  style: const TextStyle(color: Colors.white, fontSize: 15),
                 ),
                 TextButton(
                   onPressed: () {
@@ -59,8 +60,8 @@ class SignInEmail extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  child: const Text(
-                    "Create One",
+                  child:  Text(
+                    "Create One".tr(),
                   ),
                 )
               ],
